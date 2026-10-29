@@ -151,7 +151,7 @@ function App() {
         <div className="sidebar-bottom">
           <div className="upgrade-card"><div className="upgrade-icon"><Zap size={18} /></div><strong>Keep your streak alive!</strong><p>Small steps today make a big difference tomorrow.</p><button onClick={() => { setPage('Goals & progress'); setMobileNav(false); }}>View your goals <ArrowUpRight size={14} /></button></div>
           <button className="nav-item" onClick={() => setNotice('Settings will be available in a future version.')}><Settings size={18} /><span>Settings</span></button>
-          <div className="profile-mini"><div className="avatar">JD</div><div className="profile-text"><strong>Jordan Davis</strong><span>Free account</span></div><ChevronDown size={16} className="muted-icon" /></div>
+          <div className="profile-mini"><div className="avatar">VK</div><div className="profile-text"><strong>Vivek Kumar</strong><span>Free account</span></div><ChevronDown size={16} className="muted-icon" /></div>
         </div>
       </aside>
 
@@ -164,7 +164,7 @@ function App() {
 
         <div className="content">
           {page === 'Overview' && <>
-            <section className="welcome-row"><div><div className="eyebrow"><span className="live-dot" /> YOUR PERSONAL FITNESS SPACE</div><h1>Good morning, Jordan <span className="wave">✳</span></h1><p className="subheading">Every move counts. Let's make today a good one.</p></div><button className="primary-button" onClick={openAdd}><Plus size={18} /> Log activity</button></section>
+            <section className="welcome-row"><div><div className="eyebrow"><span className="live-dot" /> YOUR PERSONAL FITNESS SPACE</div><h1>Good morning, Vivek <span className="wave">✳</span></h1><p className="subheading">Every move counts. Let's make today a good one.</p></div><button className="primary-button" onClick={openAdd}><Plus size={18} /> Log activity</button></section>
             <section className="hero-card"><div className="hero-content"><span className="hero-pill"><Zap size={13} /> YOUR DAILY SNAPSHOT</span><h2>You're building<br />something <em>great.</em></h2><p>Consistency beats perfection. Keep showing up for yourself.</p><button className="hero-button" onClick={() => setPage('Goals & progress')}>See your progress <ArrowUpRight size={16} /></button></div><div className="hero-art" aria-hidden="true"><div className="art-ring ring-one" /><div className="art-ring ring-two" /><div className="art-ring ring-three" /><div className="art-circle"><Activity size={72} strokeWidth={1.4} /></div><div className="floating-stat"><Flame size={17} /><span><b>{totals.calories}</b><small>kcal today</small></span></div><div className="floating-check"><Check size={20} /></div></div><div className="hero-number">01 <span> / MOVE WITH PURPOSE</span></div></section>
 
             <section className="section-heading"><div><h2>Your daily activity</h2><p>Here's how you're doing today.</p></div><button className="text-button" onClick={() => setPage('Goals & progress')}>View goals <ArrowUpRight size={15} /></button></section>
